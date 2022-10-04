@@ -135,7 +135,7 @@
       <a href="#">
         <img class="mb-5" src="images/logo.svg" alt="meet landing page logo"
       /></a>
-      <div class="mb-5">
+      <div class="col mb-5 d-lg-none">
         <img
           class="img-fluid"
           src="images/tablet/image-hero.png"
@@ -143,8 +143,15 @@
         />
       </div>
     </header>
-    <main class="container pt-5">
-      <div class="mx-auto" style="max-width: 400px">
+    <main class="container row mx-auto pt-5">
+      <div class="col-3 d-none d-lg-block">
+        <img
+          class="img-fluid"
+          src="images/desktop/image-hero-left.png"
+          alt="hero left"
+        />
+      </div>
+      <div class="col-8 mx-auto" style="max-width: 440px">
         <h1 class="mb-5 text-dark">Group Chat for Everyone</h1>
         <p class="mb-5">
           Meet makes it easy to connect with others face-to-face virtually and
@@ -168,15 +175,22 @@
           >
         </div>
       </div>
-      <p
-        class="circle-line border border-top-0 border-end-0 border-bottom-0 border-start-1"
-      ></p>
-      <p
-        class="border rounded-circle p-3 d-flex justify-content-center align-items-center mx-auto circle-size circle-1 bg-light"
-      >
-        01
-      </p>
+      <div class="col-3 d-none d-lg-block">
+        <img
+          class="img-fluid"
+          src="images/desktop/image-hero-right.png"
+          alt="hero right"
+        />
+      </div>
     </main>
+    <p
+      class="circle-line border border-top-0 border-end-0 border-bottom-0 border-start-1"
+    ></p>
+    <p
+      class="border rounded-circle p-3 d-flex justify-content-center align-items-center mx-auto circle-size circle-1 bg-light"
+    >
+      01
+    </p>
     <aside class="container mx-auto row row-cols-2 row-cols-md-4 g-3 my-5">
       <div class="col">
         <img
@@ -210,7 +224,9 @@
     <aside class="container w-sm mx-auto">
       <p class="text-green text-uppercase letter-space">Built for modern use</p>
 
-      <p class="h1 text-dark">Smarter meetings, all in one place</p>
+      <p class="h1 text-dark mx-auto mb-5" style="max-width: 400px">
+        Smarter meetings, all in one place
+      </p>
 
       <p>
         Send messages, share files, show your screen, and record your meetings —
