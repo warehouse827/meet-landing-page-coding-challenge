@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Meet landing page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* font-family: 'Red Hat Display', sans-serif; */
+      :root {
+        --button-one: #4d96a9;
+        --button-one-hover: #71c0d4;
+        --button-two: #855fb1;
+        --button-two-hover: #b18bdd;
+        --dark: #28283d;
+        --gray: #87879d;
+        --light: #fafafa;
+        --bs-border-color: #87879d !important;
+      }
+      body {
+        color: var(--gray);
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .h1,
+      .h2,
+      .h3,
+      .h4,
+      .h5,
+      .h6,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 900;
+      }
+      .btn-one {
+        background-color: var(--button-one) !important;
+      }
+      .btn-one:hover {
+        background-color: var(--button-one-hover) !important;
+      }
+      .btn-two {
+        background-color: var(--button-two) !important;
+      }
+      .btn-two:hover {
+        background-color: var(--button-two-hover) !important;
+      }
+      .text-green {
+        color: var(--button-one);
+      }
+      .text-dark {
+        color: var(--dark);
+      }
+      .letter-space {
+        letter-spacing: 0.225em;
+      }
+      /* circle */
+      .circle-line {
+        height: 84px;
+        width: 1px;
+        margin: 60px auto 0;
+      }
+      .circle-size {
+        height: 56px;
+        width: 56px;
+        font-weight: 900;
+      }
+      .circle-2 {
+        position: relative;
+        top: 40px;
+        z-index: 3;
+      }
+      /* Background */
+      footer {
+        background-image: url("images/mobile/image-footer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @media (min-width: 768px) {
+        footer {
+          background-image: url("images/desktop/image-footer.jpg");
+        }
+        .footer-content {
+          min-height: 300px;
+        }
+      }
+      .bg-green {
+        background-color: var(--button-one);
+        position: absolute;
+        height: 100%;
+        content: "";
+        width: 100%;
+        opacity: 0.9;
+      }
+      .footer-content {
+        z-index: 2;
+        position: relative;
+      }
+      /* widths */
+      .w-sm {
+        max-width: 576px;
+      }
+    </style>
+  </head>
+  <body class="bg-light text-center pt-4">
+    <header class="container">
+      <a href="#">
+        <img class="mb-5" src="images/logo.svg" alt="meet landing page logo"
+      /></a>
+      <div class="mb-5">
+        <img
+          class="img-fluid"
+          src="images/tablet/image-hero.png"
+          alt="meet landing page tablet banner"
+        />
+      </div>
+    </header>
+    <main class="container pt-5">
+      <div class="mx-auto" style="max-width: 400px">
+        <h1 class="mb-5 text-dark">Group Chat for Everyone</h1>
+        <p class="mb-5">
+          Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.
+        </p>
+        <div class="d-md-flex">
+          <!-- buttons -->
+          <a
+            class="btn btn-one text-light rounded-5 d-block mx-auto mb-3 pt-2 pb-4 px-5"
+            href="#"
+            role="button"
+            style="max-width: 250px"
+            >Download <span class="text-light text-opacity-75">v1.3</span></a
+          >
+          <a
+            class="btn btn-two text-light rounded-5 d-block mx-auto mb-3 pt-2 pb-4 px-5"
+            href="#"
+            role="button"
+            style="max-width: 220px"
+            >What is it?</a
+          >
+        </div>
+      </div>
+      <p
+        class="circle-line border border-top-0 border-end-0 border-bottom-0 border-start-1"
+      ></p>
+      <p
+        class="border rounded-circle p-3 d-flex justify-content-center align-items-center mx-auto circle-size circle-1 bg-light"
+      >
+        01
+      </p>
+    </main>
+    <aside class="container mx-auto row row-cols-2 row-cols-md-4 g-3 my-5">
+      <div class="col">
+        <img
+          class="img-fluid rounded"
+          src="images/desktop/image-woman-in-videocall.jpg"
+          alt="woman in video call"
+        />
+      </div>
+      <div class="col">
+        <img
+          class="img-fluid rounded"
+          src="images/desktop/image-women-videochatting.jpg"
+          alt="women voice chatting"
+        />
+      </div>
+      <div class="col">
+        <img
+          class="img-fluid rounded"
+          src="images/desktop/image-men-in-meeting.jpg"
+          alt="woman in video call"
+        />
+      </div>
+      <div class="col">
+        <img
+          class="img-fluid rounded"
+          src="images/desktop/image-man-texting.jpg"
+          alt="women voice chatting"
+        />
+      </div>
+    </aside>
+    <aside class="container w-sm mx-auto">
+      <p class="text-green text-uppercase letter-space">Built for modern use</p>
+
+      <p class="h1 text-dark">Smarter meetings, all in one place</p>
+
+      <p>
+        Send messages, share files, show your screen, and record your meetings —
+        all in one workspace. Control who can join with invite-only team access,
+        data encryption, and data export.
+      </p>
+      <div class="circle-2">
+        <p class="circle-line border border-start-1"></p>
+        <p
+          class="border rounded-circle p-3 d-flex justify-content-center align-items-center mx-auto circle-size bg-light"
+        >
+          02
+        </p>
+      </div>
+    </aside>
+
+    <footer class="position-relative">
+      <div class="bg-green"></div>
+      <div
+        class="footer-content container mx-auto py-5 px-3 px-md-0 row row-cols-lg-4 justify-content-center justify-content-md-between align-items-center"
+      >
+        <div>
+          <h2 class="h1 text-light mb-5 mb-md-0">Experience more together</h2>
+        </div>
+        <div>
+          <p class="text-light mb-5 mb-md-0 w-sm mx-auto">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+        </div>
+        <div>
+          <a
+            class="btn btn-two text-light rounded-5 d-inline-block mx-auto pt-2 pb-4 px-5"
+            href="#"
+            role="button"
+            >Download <span class="text-light text-opacity-75">v1.3</span></a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
